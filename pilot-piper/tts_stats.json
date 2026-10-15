@@ -1,0 +1,17 @@
+{
+  "pilot": "piper-tts-ru",
+  "engine": "rhasspy/piper 2023.11.14-2 (CPU onnxruntime)",
+  "voice": "ru_RU-dmitri-medium (22.05 kHz, Apache/EUPL, rhasspy/piper-voices)",
+  "source": "vet-digest-llm data/llm_digest.json, week 2026-W41",
+  "chars": 1341,
+  "wav_sec": 80.4,
+  "mp3_sec": 80.5,
+  "mp3_kb": 509,
+  "chars_per_sec": 16.7,
+  "normalization": [
+    "флайвеи раскрыты",
+    "R-индекс -> Р-индекс, 100–85 -> от 100 до 85",
+    "LLM -> языковая модель",
+    "даты развёрнуты"
+  ]
+}
