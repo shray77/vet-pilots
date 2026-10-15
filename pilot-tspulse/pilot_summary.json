@@ -1,0 +1,191 @@
+{
+  "pilot": "tspulse-anomaly-week",
+  "model": "ibm-granite/granite-timeseries-tspulse-r1 @ main (1M params, CPU)",
+  "series": {
+    "source": "vet-heatmap outbreaks.json (WAHIS+FSVPS)",
+    "points": 2192,
+    "from": "2020-10-15",
+    "to": "2026-10-15",
+    "mean_daily": 1.2
+  },
+  "anomaly_of_week": {
+    "window": [
+      "2026-10-09",
+      "2026-10-15"
+    ],
+    "days_in_window": 7,
+    "mean_score": 0.395,
+    "max_score": 0.443,
+    "percentile_vs_history_mean": 85.6,
+    "percentile_vs_history_max": 88.1,
+    "threshold": 0.6,
+    "days_over_threshold": 0,
+    "verdict": "повышенный фон",
+    "week_breakdown": [
+      {
+        "outbreaks": 0,
+        "diseases": {},
+        "top_regions": []
+      },
+      {
+        "outbreaks": 12,
+        "diseases": {
+          "Бешенство": 5,
+          "Лейкоз КРС": 3,
+          "Трихинеллёз": 2,
+          "Бруцеллёз": 1
+        },
+        "top_regions": [
+          "Алтайский край (2)",
+          "Красноярский край (2)",
+          "Самарская область (1)"
+        ],
+        "cases": 0
+      },
+      {
+        "outbreaks": 8,
+        "diseases": {
+          "Бешенство": 2,
+          "Лейкоз КРС": 2,
+          "Трихинеллёз": 2,
+          "Бруцеллёз": 1
+        },
+        "top_regions": [
+          "Алтайский край (3)",
+          "Забайкальский край (2)",
+          "Белгородская область (1)"
+        ],
+        "cases": 0
+      }
+    ]
+  },
+  "top10_all_time": [
+    {
+      "date": "2026-05-07",
+      "score": 0.941,
+      "count": 2,
+      "outbreaks": 2,
+      "diseases": {
+        "Бруцеллёз": 1,
+        "Лептоспироз": 1
+      },
+      "top_regions": [
+        "Алтайский край (1)",
+        "Забайкальский край (1)"
+      ],
+      "cases": 0
+    },
+    {
+      "date": "2026-05-08",
+      "score": 0.933,
+      "count": 11,
+      "outbreaks": 11,
+      "diseases": {
+        "Бешенство": 5,
+        "Бруцеллёз": 2,
+        "Лейкоз КРС": 1,
+        "Варроатоз пчёл": 1
+      },
+      "top_regions": [
+        "Смоленская область (1)",
+        "Амурская область (1)",
+        "Белгородская область (1)"
+      ],
+      "cases": 0
+    },
+    {
+      "date": "2026-05-06",
+      "score": 0.933,
+      "count": 14,
+      "outbreaks": 14,
+      "diseases": {
+        "Бешенство": 8,
+        "Лейкоз КРС": 4,
+        "Бруцеллёз": 1,
+        "Лептоспироз": 1
+      },
+      "top_regions": [
+        "Алтайский край (2)",
+        "Самарская область (2)",
+        "Забайкальский край (2)"
+      ],
+      "cases": 0
+    },
+    {
+      "date": "2026-05-09",
+      "score": 0.926,
+      "count": 0,
+      "outbreaks": 0,
+      "diseases": {},
+      "top_regions": []
+    },
+    {
+      "date": "2026-05-10",
+      "score": 0.925,
+      "count": 0,
+      "outbreaks": 0,
+      "diseases": {},
+      "top_regions": []
+    },
+    {
+      "date": "2026-05-05",
+      "score": 0.924,
+      "count": 0,
+      "outbreaks": 0,
+      "diseases": {},
+      "top_regions": []
+    },
+    {
+      "date": "2026-05-04",
+      "score": 0.924,
+      "count": 13,
+      "outbreaks": 13,
+      "diseases": {
+        "Бешенство": 4,
+        "Лейкоз КРС": 4,
+        "Бруцеллёз": 3,
+        "Лептоспироз": 1
+      },
+      "top_regions": [
+        "Иркутская область (3)",
+        "Курганская область (1)",
+        "Оренбургская область (1)"
+      ],
+      "cases": 0
+    },
+    {
+      "date": "2026-05-03",
+      "score": 0.919,
+      "count": 0,
+      "outbreaks": 0,
+      "diseases": {},
+      "top_regions": []
+    },
+    {
+      "date": "2026-05-23",
+      "score": 0.919,
+      "count": 0,
+      "outbreaks": 0,
+      "diseases": {},
+      "top_regions": []
+    },
+    {
+      "date": "2026-05-26",
+      "score": 0.919,
+      "count": 0,
+      "outbreaks": 0,
+      "diseases": {},
+      "top_regions": []
+    }
+  ],
+  "pipeline": {
+    "prediction_mode": [
+      "time",
+      "fft"
+    ],
+    "aggregation_length": 64,
+    "aggr_function": "max",
+    "smoothing_length": 8,
+    "threshold": 0.6
+  }
+}
