@@ -1,0 +1,67 @@
+{
+  "service": "vet-pilots/tspulse",
+  "generated_at": "2026-10-15T13:48:35.902556+00:00",
+  "model": "ibm-granite/granite-timeseries-tspulse-r1 @ main (1M params, CPU)",
+  "week": {
+    "window": [
+      "2026-10-09",
+      "2026-10-15"
+    ],
+    "verdict": "повышенный фон",
+    "note": "Умеренный подъём активности вспышек относительно обычного уровня.",
+    "mean_score": 0.442,
+    "max_score": 0.495,
+    "percentile_mean": 87.0,
+    "percentile_max": 89.5,
+    "threshold": 0.6,
+    "days_over_threshold": 0
+  },
+  "week_diseases": {
+    "Бешенство": 18,
+    "Лейкоз КРС": 9,
+    "Трихинеллёз": 5,
+    "Лептоспироз": 4,
+    "Бруцеллёз": 2
+  },
+  "recent_anomalies_90d": [
+    {
+      "date": "2026-07-18",
+      "score": 0.595,
+      "count": 0,
+      "diseases": {}
+    },
+    {
+      "date": "2026-07-19",
+      "score": 0.582,
+      "count": 0,
+      "diseases": {}
+    },
+    {
+      "date": "2026-07-20",
+      "score": 0.568,
+      "count": 7,
+      "diseases": {
+        "Бешенство": 5,
+        "Лейкоз КРС": 2
+      }
+    }
+  ],
+  "all_time_top": [
+    {
+      "date": "2026-05-07",
+      "score": 0.957,
+      "count": 2,
+      "diseases": {
+        "Бруцеллёз": 1,
+        "Лептоспироз": 1
+      }
+    }
+  ],
+  "series": {
+    "points": 2192,
+    "from": "2020-10-15",
+    "to": "2026-10-15",
+    "mean_daily": 1.2,
+    "max_daily": 24
+  }
+}
