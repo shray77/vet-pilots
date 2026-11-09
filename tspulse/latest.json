@@ -1,32 +1,38 @@
 {
   "service": "vet-pilots/tspulse",
-  "generated_at": "2026-11-02T13:46:13.721398+00:00",
+  "generated_at": "2026-11-09T14:14:14.123734+00:00",
   "model": "ibm-granite/granite-timeseries-tspulse-r1 @ main (1M params, CPU)",
   "week": {
     "window": [
-      "2026-10-27",
-      "2026-11-02"
+      "2026-11-03",
+      "2026-11-09"
     ],
     "verdict": "повышенный фон",
     "note": "Умеренный подъём активности вспышек относительно обычного уровня.",
-    "mean_score": 0.413,
-    "max_score": 0.463,
-    "percentile_mean": 84.9,
-    "percentile_max": 88.5,
+    "mean_score": 0.443,
+    "max_score": 0.496,
+    "percentile_mean": 85.4,
+    "percentile_max": 89.0,
     "threshold": 0.6,
     "days_over_threshold": 0
   },
   "week_diseases": {
-    "Бешенство": 16,
+    "Бешенство": 17,
     "Лейкоз КРС": 7,
-    "Бруцеллёз": 6,
-    "Лептоспироз": 4,
-    "Трихинеллёз": 4
+    "Бруцеллёз": 4,
+    "Трихинеллёз": 3,
+    "Лептоспироз": 1
   },
   "recent_anomalies_90d": [
     {
+      "date": "2026-08-16",
+      "score": 0.543,
+      "count": 0,
+      "diseases": {}
+    },
+    {
       "date": "2026-08-12",
-      "score": 0.527,
+      "score": 0.541,
       "count": 15,
       "diseases": {
         "Бешенство": 7,
@@ -35,28 +41,20 @@
       }
     },
     {
-      "date": "2026-08-14",
-      "score": 0.527,
-      "count": 12,
+      "date": "2026-08-13",
+      "score": 0.537,
+      "count": 5,
       "diseases": {
-        "Бешенство": 6,
+        "Лейкоз КРС": 2,
         "Бруцеллёз": 1,
-        "Лейкоз КРС": 1
-      }
-    },
-    {
-      "date": "2026-08-06",
-      "score": 0.524,
-      "count": 1,
-      "diseases": {
-        "Бруцеллёз": 1
+        "Инфекционная анемия лошадей": 1
       }
     }
   ],
   "all_time_top": [
     {
       "date": "2026-05-07",
-      "score": 0.913,
+      "score": 0.937,
       "count": 2,
       "diseases": {
         "Бруцеллёз": 1,
@@ -66,9 +64,9 @@
   ],
   "series": {
     "points": 2192,
-    "from": "2020-11-02",
-    "to": "2026-11-02",
-    "mean_daily": 1.24,
+    "from": "2020-11-09",
+    "to": "2026-11-09",
+    "mean_daily": 1.26,
     "max_daily": 24
   }
 }
